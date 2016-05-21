@@ -1,4 +1,4 @@
-% !TEX TS-program = xelatex
+% !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
 
@@ -7,10 +7,13 @@
 \input{inp_pkg_pdflatex.tex}
 
 
+
 \usepackage{amstext}
 \usepackage{calc}
 \usepackage{framed}
 \usepackage{parskip}
+\usepackage{mathtools}
+
 
 
 \begin{document}
@@ -75,8 +78,11 @@
     \renewcommand{\txtscript}[1]{\textsf{\scriptsize{}#1}}
     \end{verbatim}
 
+\newcommand{\myind}{\txtscript{молока}}
+
+
     \[
-    \boxed{\rho_\txtscript{молока}=\frac{M_\txtscript{молока}}{V_\txtscript{молока}}} 
+    \boxed{\rho_\myind=\frac{M_\myind}{V_\myind}}
     \]
  
 \section{Счётчики}
